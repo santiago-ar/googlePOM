@@ -22,13 +22,7 @@ public class GoogleSearchStep  {
        Generator.getInstance(GoogleHome.class,webDriver).goToGooglePage();
     }
 
-    @When("^I do a search of (.*)$")
-    public void iDoASearchOf(String search) throws Exception {
-        Generator.getInstance(GoogleHome.class,webDriver).searchGoogleTextBox(search);
-
-    }
-
-    @Then("^the first result is (.*)$")
+     @Then("^the first result is (.*)$")
     public void theFirstResultIs(String result) throws Exception{
         Assert.assertThat(result, CoreMatchers.containsString(Generator.getInstance(Results.class,webDriver).getResultText()));
     }
@@ -36,6 +30,28 @@ public class GoogleSearchStep  {
     @When("^I click on the first result link$")
     public void iClickOnTheFirstResultLink() throws Exception {
         Generator.getInstance(Results.class,webDriver).clickOnFirstResult();
+    }
+
+    @When("^the suggestions list is displayed$")
+    public void theSuggestionsListIsDisplayed() throws Exception {
+        Generator.getInstance(GoogleHome.class,webDriver).waitSuggestion();
+    }
+
+    @When("^I click on the first suggestion in the list$")
+    public void iClickOnTheFirstSuggestionInTheList() throws Exception {
+        Generator.getInstance(GoogleHome.class,webDriver).clickOnFirstSuggestion();
+    }
+
+
+    @When("^I type (.*) into the search field$")
+    public void iTypeTheNameOfTheWindIntoTheSearchField(String search) throws Exception {
+        Generator.getInstance(GoogleHome.class,webDriver).searchGoogleTextBox(search);
+    }
+
+    @When("^I click the Google Search button$")
+    public void iClickTheGoogleSearchButton() throws Exception {
+        Generator.getInstance(GoogleHome.class,webDriver).clickOnSearch();
+
     }
 
 

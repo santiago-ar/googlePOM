@@ -11,8 +11,11 @@ public class GoogleHome extends BasePage {
     @FindBy(xpath="//*[@name='q']")
     WebElement textBox;
 
-    @FindBy(xpath = "( //input[@name=\"btnK\"])[2]")
+    @FindBy(xpath = "(//input[@name=\"btnK\"])[2]")
     WebElement searchButton;
+
+    @FindBy(xpath = "(//*[@class='sbl1'])[1]")
+    WebElement suggestion;
 
     public GoogleHome(WebDriver driver) {
         super(driver);
@@ -29,8 +32,18 @@ public class GoogleHome extends BasePage {
     public void searchGoogleTextBox(String text){
         waitVisibility(textBox);
         writeText(textBox,text);
+
+    }
+    public void clickOnSearch(){
         click(searchButton);
     }
 
+    public void clickOnFirstSuggestion(){
+        click(suggestion);
+    }
+
+    public void waitSuggestion(){
+        waitVisibility(suggestion);
+    }
 
 }
