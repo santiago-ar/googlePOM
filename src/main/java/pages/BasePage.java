@@ -18,15 +18,6 @@ public class BasePage {
     public void click(WebElement element) {
         element.click();
     }
-
-    public void writeText(WebElement element, String word) {
-        element.sendKeys(word);
-    }
-
-    public void waitVisibility(WebElement element) {
-        wait.until(ExpectedConditions.visibilityOf(element));
-    }
-
     public String getTextElement(WebElement element) {
         waitVisibility(element);
         if (element.getText().isEmpty()) {
@@ -35,5 +26,13 @@ public class BasePage {
             return element.getText();
         }
     }
+    public void writeText(WebElement element, String word) {
+        element.sendKeys(word);
+    }
+
+    public void waitVisibility(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
 
 }

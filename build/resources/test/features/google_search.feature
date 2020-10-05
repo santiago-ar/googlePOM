@@ -7,7 +7,7 @@ Feature: Google Homepage Search
         And I click the Google Search button
     Then the first result is El nombre del viento (The Name of the Wind)
      When I click on the first result link
-  #  Then I go to the “Patrick Rothfuss - The Books” page
+    Then I go to page
 
   @TestCase2
    Scenario: User can search by using the suggestions
@@ -17,5 +17,5 @@ Feature: Google Homepage Search
         And I click on the first suggestion in the list
       Then the first result is El nombre del viento (The Name of the Wind)
        When I click on the first result link
-    #  Then I go to the “Patrick Rothfuss - The Books” page
+      Then I go to page
 

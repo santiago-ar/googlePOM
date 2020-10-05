@@ -9,6 +9,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import pages.GoogleHome;
 import pages.Results;
+import pages.WikiPage;
 import utils.Generator;
 
 public class GoogleSearchStep  {
@@ -54,5 +55,8 @@ public class GoogleSearchStep  {
 
     }
 
-
+    @Then("^I go to page$")
+    public void iGoToThePatrickRothfussTheBooksPage() throws Exception {
+        Generator.getInstance(WikiPage.class,webDriver).waitForTitleWiki();
+    }
 }

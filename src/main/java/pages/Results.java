@@ -24,6 +24,7 @@ public class Results extends BasePage {
     }
 
     public void clickOnFirstResult() {
+        waitVisibility(firstResult);
         click(firstResult);
     }
 }

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Google Homepage Search" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-10-05T14:18:09" hostname="DESKTOP-5LA685H" time="19.231">
+<testsuite name="Google Homepage Search" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-10-05T19:37:40" hostname="DESKTOP-5LA685H" time="19.897">
   <properties/>
-  <testcase name="User can search with “Google Search”" classname="Google Homepage Search" time="9.613"/>
-  <testcase name="User can search by using the suggestions" classname="Google Homepage Search" time="9.613"/>
+  <testcase name="User can search with “Google Search”" classname="Google Homepage Search" time="9.831"/>
+  <testcase name="User can search by using the suggestions" classname="Google Homepage Search" time="10.061"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[oct. 05, 2020 9:18:09 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[oct. 05, 2020 2:37:41 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --incognito, goog:chromeOptions: {args: [--incognito], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 19593
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 11603
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-oct. 05, 2020 9:18:12 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+oct. 05, 2020 2:37:44 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
@@ -24,15 +24,15 @@ INFO: Detected dialect: W3C
 
 TEST PASSED: User can search with “Google Search”
 ----------------------------------------------------------------------------?[0m
-oct. 05, 2020 9:18:18 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+oct. 05, 2020 2:37:50 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --incognito, goog:chromeOptions: {args: [--incognito], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 5199
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 40952
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-oct. 05, 2020 9:18:21 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+oct. 05, 2020 2:37:53 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
